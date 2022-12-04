@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_USER=vulcan
+      - POSTGRES_PASSWORD=vulcan
+      - POSTGRES_DB=vulcan
+    ports:
+      - "5432:5432"
+    restart: always
+
+  redis:
+    image: redis:5.0-alpine
+    command: ["redis-server", "--requirepass", "foobar", "--appendonly", "yes"]
+    restart: always
+    ports:
+      - 6379:6379
