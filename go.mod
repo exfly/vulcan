@@ -3,6 +3,7 @@ module github.com/exfly/vulcan
 go 1.19
 
 require (
+	github.com/Masterminds/squirrel v1.5.3
 	github.com/aead/chacha20poly1305 v0.0.0-20201124145622-1a5aba2a8b29
 	github.com/davecgh/go-spew v1.1.1
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
@@ -11,6 +12,7 @@ require (
 	github.com/google/wire v0.5.0
 	github.com/grpc-ecosystem/go-grpc-middleware v1.3.0
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.14.0
+	github.com/iancoleman/strcase v0.2.0
 	github.com/jackc/pgx/v5 v5.1.1
 	github.com/jmoiron/sqlx v1.3.5
 	github.com/lib/pq v1.10.0
@@ -26,7 +28,6 @@ require (
 )
 
 require (
-	github.com/Masterminds/squirrel v1.5.3 // indirect
 	github.com/aead/chacha20 v0.0.0-20180709150244-8b13a72661da // indirect
 	github.com/aead/poly1305 v0.0.0-20180717145839-3fee0db0b635 // indirect
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
